@@ -1,1 +1,1 @@
-first assignment will go here :)
+Create a multi-activity application following the given instructions.
