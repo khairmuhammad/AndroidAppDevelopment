@@ -1,0 +1,3 @@
+As per discussion in the class, you guys are requested to create a MediaPlayer Application which will search the songs and media from the internal / external memory and can play..
+
+Note: You also have to add the seekbar to control the flow of songs along with next and prev song buttons
