@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickAns1"
+        android:text="1. What callbacks are called when an app is launched.?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Answer1"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="#03A9F4"
+        android:text="When an app is called the onStart() method is called."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClickAns2"
+        android:text="2. What callbacks are occur when Home is pressed.?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer1" />
+
+    <TextView
+        android:id="@+id/Answer2"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFB300"
+        android:text="When home is pressed then these methods are called."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClickAns3"
+        android:text="3. What callbacks are occur when an app is restarted from the launcher.?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer2" />
+
+    <TextView
+        android:id="@+id/Answer3"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="#69F0AE"
+        android:text="onResume(), onRetart() is called when an app is restarted."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:onClick="onClickAns4"
+        android:text="4. What callbacks are occur when the app is rotated.?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer3" />
+
+    <TextView
+        android:id="@+id/Answer4"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="#64FFDA"
+        android:text="Don't Know!"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

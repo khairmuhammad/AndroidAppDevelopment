@@ -1,0 +1,17 @@
+Content Provider
+• A content provider manages access to a central repository of data..
+• The provider is part of an Android application, which often provides its own UI for working with the data.
+• However, content providers are primarily intended to be used by other applications, which access the provider using a provider client object.
+• Together, providers and provider clients offer a consistent, standard interface to data that also handles
+inter-process communication and secure data access.
+
+
+Accessing a Content Provider
+• A content provider offers methods which
+correspond to the basic CRUD functions of
+persistent storage.
+• An application accesses the data from a content
+provider with a ContentResolver client object. This
+object has methods that call identicallynamed
+methods in the provider object.
+• A content provider is identified by a content URI.

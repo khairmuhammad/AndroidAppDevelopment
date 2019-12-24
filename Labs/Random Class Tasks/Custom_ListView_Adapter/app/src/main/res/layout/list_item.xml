@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/book_coverPage"
+        android:layout_width="150dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/book_coverPage"
+        android:id="@+id/txtV_book_name"
+        android:text="The fault in our stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/book_coverPage"
+        android:id="@+id/txtV_author"
+        android:text="john green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/book_coverPage"
+        android:text="2012"
+        android:id="@+id/txtV_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>

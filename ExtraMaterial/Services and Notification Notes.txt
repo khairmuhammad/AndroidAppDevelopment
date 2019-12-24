@@ -1,0 +1,55 @@
+doInBackground is abstarct method other methods are overriden in async task.
+
+There are two ways for prompting apps that are not running in foreground.
+one is broadcasting for example alaram app. our alarm app is closed but when alaram time came then it uses broadcasting to open the app and run the alarm. and another is notification for example you get a message in your msg app which is closed you can see the notification.
+
+Services by default run in same processs. to run that in separate process we need to tell the service that we want to run in the different process.
+
+Service attribute:
+	<exported>: if false then it means this service can only be used by its application and other apps can not use it...
+	  if true then it means this service can be used by other apps too..
+
+if used colon (:) then the process will be used in the app.
+if used in small letter then this process will be global.
+
+Broadcast Receiver: it is a separate component. activity can communicate with the service but, communication of services to intent or other apps is difficult that's why we use Broadcast Receiver.
+
+Types of receive that receiver can get. tell receiver that you should only get this(any type you specify) type of data and filter out other data.
+
+
+
+When a service has completed a task, it can notify the app by "sending
+a broadcast" which the app can listen for:
+– As before, set an action in the intent to distinguish different kinds of results.
+
+
+Your activity can hear broadcasts using a BroadcastReceiver.
+– Extend BroadcastReceiver with the code to handle the message.
+– Any extra parameters in the message come from the service's intent.
+
+
+START_STICKY:
+START_NOT_STICY:
+START_REDELIEVERED:
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+Notification:
+
+Pending Intent:
+
+1) get an object of Notification Manager
+2) create/build notification
+3) notify the notification using manager
+
+
+Syntax:
+	NotificationManager nm = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+	NotificationBuilder builder = new NotificationBuilder()
+		.setIcon(R.id.icon)
+		.setTitle("Title of Notification");
+	Notification nf = builder.build();
+	nm.notify(111,nf);
+
+
+

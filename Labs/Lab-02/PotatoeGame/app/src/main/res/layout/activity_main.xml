@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.636"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171"
+        app:srcCompat="@drawable/body" />
+
+    <ImageView
+        android:id="@+id/hat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/body"
+        app:srcCompat="@drawable/hat"
+        />
+
+    <ImageView
+        android:id="@+id/eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/eyes"
+        />
+
+    <ImageView
+        android:id="@+id/eyebrows"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/eyebrows"
+        />
+
+    <ImageView
+        android:id="@+id/glasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/glasses"
+        />
+
+    <ImageView
+        android:id="@+id/ears"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/ears"
+        />
+
+    <ImageView
+        android:id="@+id/nose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/body"
+        app:srcCompat="@drawable/nose"
+        />
+
+    <ImageView
+        android:id="@+id/moustach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/body"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/body"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/moustache"
+        />
+
+    <ImageView
+        android:id="@+id/mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/moustach"
+        app:layout_constraintStart_toStartOf="@+id/moustach"
+        app:layout_constraintTop_toTopOf="@+id/hat"
+        app:srcCompat="@drawable/mouth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

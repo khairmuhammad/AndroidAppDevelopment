@@ -1,0 +1,7 @@
+Hello this is text file from raw folder.
+This file contains sample text to understand
+the basic concept of internal storage.
+This file is stored in raw folder.
+Raw folder is stored in res folder.
+Res folder is stored in app folder.
+App folder is in main folder of project.

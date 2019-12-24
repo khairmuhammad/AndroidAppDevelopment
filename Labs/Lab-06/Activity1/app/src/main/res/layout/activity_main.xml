@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:background="@drawable/madlibs"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:text="Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story before reading the – often comical or nonsensical – story aloud. The game is frequently played as a party game or as a pastime.
+
+The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958. "
+        android:layout_weight="2.3"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".4"
+        android:text="Let's Start"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

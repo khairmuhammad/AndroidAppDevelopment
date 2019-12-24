@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Potatoe Game</string>
+    <string name="eyes">Eyes</string>
+    <string name="eyebrows">Eyebrows</string>
+    <string name="ears">Ears</string>
+    <string name="nose">Nose</string>
+    <string name="shoes">Shoes</string>
+    <string name="arms">Arms</string>
+    <string name="moustache">Moustache</string>
+    <string name="hat">Hat</string>
+    <string name="mouth">Mouth</string>
+    <string name="glasses">Glasses</string>
+</resources>

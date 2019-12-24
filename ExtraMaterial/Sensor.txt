@@ -1,0 +1,30 @@
+4 classes.
+
+1)Sensor Manager: manages the sensors.
+
+2)Sensor: different types of sensor availavle, we can use those.
+
+
+3)SensorEvent: The system uses this class to create a sensor event object, which provides information about a sensor event.
+A sensor event object includes the following information: the raw sensor data, the type of sensor that generated the event,
+the accuracy of the data, and the timestamp for the event.
+
+
+4)SensorEventListener: listens the events of sensor.
+returns 2 parameters, one parameter is event.
+
+
+First Step is to create a sensor manager
+SensorManager mSensorManager;
+mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+Second step is to create sensor(which we want to user)
+Sensor mSensor;
+mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+
+Third step is to register the sensor (for listening the sensor)
+mSensorManager.registerListener(this,mSensor,SensorManager.SENSOR_DELAY_NORMAL);
+
+Fourht step is to implement, we have two methods onAccuracyChanged() and onSensorChanged()
+onSensorChanged(): this mehtod provides the real time data from sensor when it changes timestamp.
+

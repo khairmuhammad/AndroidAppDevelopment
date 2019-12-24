@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Homer"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_margin="40dp"
+            android:textColor="@android:color/holo_blue_dark"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:foreground="@android:color/darker_gray"
+            android:background="?android:attr/listDivider" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Give Generously"
+            android:textSize="22dp"
+            android:textColor="#000000"
+            android:layout_margin="30dp"
+            />
+
+        <NumberPicker
+            android:id="@+id/number_picker_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_direct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direct"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_payoneer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Payoneer"
+                android:textSize="18dp"
+                android:layout_marginLeft="30dp"
+                />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:foreground="@android:color/darker_gray"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/progressBar"
+            android:indeterminate="false"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="25dp"
+        >
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:textSize="22dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+
+            />
+
+        <EditText
+            android:id="@+id/edit_text_amount"
+            android:layout_width="150dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="$$$"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/donate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donate"
+            android:textSize="18dp"
+            android:textAlignment="center"
+            android:fontFamily="monospace"
+            android:onClick="donate"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:foreground="@android:color/darker_gray"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/donate_amount_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Donated amount"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

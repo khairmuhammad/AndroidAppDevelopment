@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/txt_instruction2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:text="your Loan Summary"
+        android:gravity="center"/>
+
+    <TextView
+        android:textAlignment="textStart"
+        android:id="@+id/txt_21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_instruction2"
+        android:text="hello"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:textAlignment="textStart"
+        android:id="@+id/txt_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_21"
+        android:text=""
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/button_loanReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_22"
+        android:layout_centerInParent="true"
+        android:text="Return Data Entry"
+        />
+
+
+
+</RelativeLayout>
